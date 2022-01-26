@@ -1,5 +1,6 @@
 //'use strict';
 exports.main_handler = async (event, context, callback) => {
+    console.log('云函数帮助:自己私库下readme文件,或者访问:https://github.com/zero205/JD_tencent_scf/tree/scf2')
     let params = {}
     let scripts = []
     if (event["TriggerName"] == 'remote') {
@@ -69,20 +70,20 @@ exports.main_handler = async (event, context, callback) => {
             if (typeof cron == 'number') {
                 // console.debug(`number param:${cron}`)
                 if (now_hour % cron == 0) {
-                    console.debug(`${script}:number cron triggered`)
+                    console.debug(`${script}:数字参数触发`)
                     scripts.push(script)
                 }
             } else {
                 // console.debug(`dict param:${cron}`)
                 if (cron.includes(now_hour)) {
-                    console.debug(`${script}:array cron triggered`)
+                    console.debug(`${script}:列表参数触发`)
                     scripts.push(script)
                 }
             }
         }
     } else {
         if (!event["Message"]) {
-            console.error('未接收到任何参数,请阅读@hshx123大佬教程的测试步骤,查看如何使用.')
+            console.error('参数触发方式:未接收到任何参数,请阅读@hshx123大佬教程的测试步骤,查看如何使用.')
             return
         }
         console.log('参数触发方式(不读取配置文件),触发参数:', event["Message"])
