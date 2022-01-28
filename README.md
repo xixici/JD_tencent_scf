@@ -20,8 +20,12 @@
 * 【青龙】拉取仓库命令：
 1. 可以直链github/国外机:`ql repo https://github.com/zero205/JD_tencent_scf.git "jd_|jx_|getJDCookie"  "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign" "main"`
 
-3. 国内机/不能直连github:`ql repo https://github.com.cnpmjs.org/zero205/JD_tencent_scf.git "jd_|jx_|getJDCookie" "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign" "main"`
-老版青龙,需要设置config.sh(如果还有extra.sh的话,也改)中的GithubProxyUrl为空""后使用国内命令(实在不懂,老版青龙可以还用国外机的命令,但是可能以后会失效),新版青龙默认不再添加ghproxy代理,无需添加
+如无法直连:
+
+老版青龙(临时解决),需要设置config.sh(如果还有extra.sh的话,也改)中的GithubProxyUrl改为
+https://pd.zwc365.com/ 或 https://pd.zwc365.com/cfworker/
+
+新版青龙可以改ProxyUrl为自己的科学上网代理,来走自己的代理
 
 * 腾讯云函数部署建议阅读@hshx123大佬的[教程](https://杏铃.top/teach/jd.html)【推荐】.[旧教程](./backUp/tencentscf.md)【备用】
 
