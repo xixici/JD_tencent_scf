@@ -27,6 +27,8 @@ https://pd.zwc365.com/ 或 https://pd.zwc365.com/cfworker/
 
 新版青龙可以改ProxyUrl为自己的科学上网代理,来走自己的代理
 
+[或者尝试修改host来尝试直连](https://www.cnblogs.com/jiannanchun/p/15397235.html)
+
 * 腾讯云函数部署建议阅读@hshx123大佬的[教程](https://杏铃.top/teach/jd.html)【推荐】.[旧教程](./backUp/tencentscf.md)【备用】
 
 * [elecV2P](https://github.com/elecV2/elecV2P) 部署【随缘维护，建议转战➟[Docker](https://www.runoob.com/docker/windows-docker-install.html) [青龙](https://github.com/whyour/qinglong)】
