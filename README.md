@@ -27,6 +27,11 @@ https://pd.zwc365.com/ 或 https://pd.zwc365.com/cfworker/
 
 新版青龙可以改ProxyUrl为自己的科学上网代理,来走自己的代理
 
+或者直接将上面两个代理地址追加到url之前来临时解决
+`ql repo https://pd.zwc365.com/https://github.com/zero205/JD_tencent_scf.git "jd_|jx_|getJDCookie"  "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign" "main"`
+
+[高级用户,可以自己创建自己的cf woker做git代理(注意将cnpmjs设为0)](https://github.com/hunshcn/gh-proxy#cf-worker%E7%89%88%E6%9C%AC%E9%83%A8%E7%BD%B2)
+
 [或者尝试修改host来尝试直连](https://www.cnblogs.com/jiannanchun/p/15397235.html)
 
 * 腾讯云函数部署建议阅读@hshx123大佬的[教程](https://杏铃.top/teach/jd.html)【推荐】.[旧教程](./backUp/tencentscf.md)【备用】
